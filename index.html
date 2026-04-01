@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michiru Sushi | Fine Japanese Dining & Sushi Bar</title>
-    <meta name="description" content="Experience the art of sushi at Michiru Sushi. Fine Japanese dining, signature rolls, and fresh sashimi in Houston and Webster.">
+    <title>Modern Japanese Sushi & Asian Cuisine | Michiru Sushi</title>
+    <meta name="description" content="Serving the Clear Lake area since 2009. Unparalleled quality, service, and creativity in modern Asian cuisine and sushi.">
     <link rel="stylesheet" href="styles.css">
+    <!-- Inline style to resolve background-clip lint warning -->
+    <style>
+        .hero h1 { background-clip: text; -webkit-background-clip: text; }
+    </style>
 </head>
 <body>
     <nav>
@@ -23,34 +27,61 @@
 
     <header class="hero">
         <div class="container">
-            <h1>MICHIRU SUSHI</h1>
-            <p style="color: var(--accent-color); font-size: 1.25rem; letter-spacing: 0.3em; margin-top: -1rem;">EST. 2026</p>
-            <div style="margin-top: 3rem;">
-                <a href="/menu" class="menu-card" style="display: inline-block; padding: 1rem 3rem; background: var(--accent-color); color: var(--bg-color); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; border-radius: 4px;">Explore Menu</a>
+            <h1>Modern Japanese Sushi<br>& Asian Cuisine</h1>
+            <p class="subtitle">Take-out Welcome &bull; V.I.P. Rewards Program</p>
+            <div class="btn-group">
+                <a href="/reservations" class="btn btn-primary">Make a Reservation</a>
+                <a href="/order" class="btn btn-secondary">Online Ordering</a>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section class="section-title">
-            <h2>The Experience</h2>
-            <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">Crafting perfection with every roll. Michiru combines traditional Japanese techniques with modern culinary innovation.</p>
+        
+        <section class="section-title" style="margin-top: 6rem;">
+            <h2>About Michiru Sushi</h2>
+            <p style="max-width: 800px; margin: 0 auto; color: var(--text-secondary); text-align: justify; text-align-last: center; font-size: 1.1rem;">
+                Serving the Clear Lake area since 2009, MichiRu Sushi offers unparalleled quality, service, and creativity at an exceptional value. 
+                While maintaining the focus on detail and presentation, our chefs employ new and traditional techniques with unique seasonal ingredients 
+                from around the world, to continue the evolution of sushi fusion and modern Asian cuisine. Boasting the city’s best reward program, 
+                a warm comfortable ambiance, a special menu that changes weekly, MichiRu provides a fulfilling dining experience.
+            </p>
         </section>
 
-        <div class="menu-grid">
-            <a href="/menu/signature-rolls" class="menu-card">
-                <h3 style="color: var(--accent-color);">Signature Rolls</h3>
-                <p>Chef-inspired creations that redefine the sushi experience.</p>
-            </a>
-            <a href="/locations/houston" class="menu-card">
-                <h3 style="color: var(--accent-color);">Houston Location</h3>
-                <p>Visit us in the heart of the city for an unforgettable evening.</p>
-            </a>
-            <a href="/locations/webster" class="menu-card">
-                <h3 style="color: var(--accent-color);">Webster Location</h3>
-                <p>Experience local dining at its finest in Webster.</p>
-            </a>
-        </div>
+        <section class="value-props">
+            <div class="value-card">
+                <div class="icon">🍱</div>
+                <h3>Take-out Welcome</h3>
+                <p>Enjoy our modern Asian cuisine from the comfort of your home. Quick and easy ordering available.</p>
+                <a href="/order" class="btn btn-secondary" style="margin-top: 1.5rem; padding: 0.5rem 1.5rem;">Order Now</a>
+            </div>
+            
+            <div class="value-card">
+                <div class="icon">✨</div>
+                <h3>V.I.P. Rewards Program</h3>
+                <p>Boasting the city’s best reward program. Earn points with every visit and unlock exclusive perks.</p>
+                <a href="/rewards" class="btn btn-secondary" style="margin-top: 1.5rem; padding: 0.5rem 1.5rem;">Join the Club</a>
+            </div>
+        </section>
+
+        <section class="location-highlight">
+            <div style="flex: 1; min-width: 300px;">
+                <p style="text-transform: uppercase; color: var(--accent-color); letter-spacing: 0.1em; font-size: 0.9rem; margin-bottom: 0.5rem;">Our Locations</p>
+                <h2>Michiru Sushi<br>NASA/Webster</h2>
+                <div style="margin: 2rem 0; color: var(--text-secondary);">
+                    <p style="margin-bottom: 0.5rem;"><strong>Address:</strong> 20911 Gulf Fwy, Webster, TX 77598</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Hours:</strong> Open Everyday at 4pm</p>
+                    <p><strong>Phone:</strong> (281) 338-9988</p>
+                </div>
+                <a href="/locations/webster" class="btn btn-primary">View Location</a>
+            </div>
+            <div style="flex: 1; text-align: right; min-width: 300px;">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Also visit us at our original location:</p>
+                <h3 style="color: var(--accent-color); font-size: 1.5rem; margin-bottom: 0.5rem;">Houston</h3>
+                <a href="/locations/houston" style="color: var(--text-primary); text-decoration: underline; text-underline-offset: 4px;">More Information &rarr;</a>
+            </div>
+        </section>
+
     </main>
 
     <footer>
